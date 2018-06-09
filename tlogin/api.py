@@ -3,6 +3,7 @@ import socket
 import json
 from com.utils.DBConnection import DBConnection
 from com.utils.LoginUtil import LoginUtil
+import pymysql
 
 import logging
 app = Flask(__name__)
@@ -72,7 +73,7 @@ def simplesignup():
 
 @app.route('/name')
 def name():
-    return 'HelloRds Rajeesh Host ='+socket.gethostname()
+    return 'HelloRds 1.8 Rajeesh Host ='+socket.gethostname()
 
 
 if __name__ == "__main__":
